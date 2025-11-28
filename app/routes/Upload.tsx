@@ -8,6 +8,11 @@ import {convertPdfToImage} from "~/lib/pdf2img";
 import {grnerateUUID} from "~/lib/utils";
 import {prepareInstructions} from "../../constants";
 
+export const meta = () => ([
+    {title: "Resumind | Upload"},
+    {name: "description", content: "upload your resume to analyse it "}
+])
+
 const Upload = () => {
     const {auth, isLoading, fs, ai, kv} = usePuterStore();
     const navigate = useNavigate();
