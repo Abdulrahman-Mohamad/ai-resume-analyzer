@@ -1,8 +1,6 @@
 import {Link} from "react-router";
 import ScoreCircle from "~/components/ScoreCircle";
 import {useEffect, useState} from "react";
-import {resume} from "react-dom/server";
-import * as fs from "node:fs";
 import {usePuterStore} from "~/lib/puter";
 
 const RuesmeCard = ({resume: {id, companyName, jobTitle, feedback, imagePath}}: { resume: Resume }) => {

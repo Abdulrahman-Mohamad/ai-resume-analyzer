@@ -1,7 +1,6 @@
 import Navbar from "~/components/Navbar";
 import {type FormEvent, useState} from "react";
 import FileUploader from "~/components/FileUploader";
-import * as fs from "node:fs";
 import {usePuterStore} from "~/lib/puter";
 import {useNavigate} from "react-router";
 import {convertPdfToImage} from "~/lib/pdf2img";
